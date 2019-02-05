@@ -6,7 +6,6 @@ inox-patchset/fix-cfi-failures-with-unbundled-libxml.patch
 inox-patchset/0001-fix-building-without-safebrowsing.patch
 inox-patchset/0003-disable-autofill-download-manager.patch
 inox-patchset/0004-disable-google-url-tracker.patch
-inox-patchset/0005-disable-default-extensions.patch
 inox-patchset/0006-modify-default-prefs.patch
 inox-patchset/0007-disable-web-resource-service.patch
 inox-patchset/0008-restore-classic-ntp.patch
@@ -96,7 +95,6 @@ ungoogled-chromium/enable-page-saving-on-more-pages.patch
 ungoogled-chromium/disable-download-quarantine.patch
 ungoogled-chromium/disable-gaia.patch
 ungoogled-chromium/disable-fonts-googleapis-references.patch
-ungoogled-chromium/disable-webstore-urls.patch
 ungoogled-chromium/fix-learn-doubleclick-hsts.patch
 ungoogled-chromium/disable-webrtc-log-uploader.patch
 ungoogled-chromium/fix-building-without-mdns-and-service-discovery.patch
