@@ -8,3 +8,4 @@ __pycache__/
 
 # Ignore optional build / cache directory
 /build
+\.directory
