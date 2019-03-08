@@ -27,8 +27,6 @@ sys.path.pop(0)
 # pathlib.Path.match() paths to include in binary pruning
 PRUNING_INCLUDE_PATTERNS = [
     'components/domain_reliability/baked_in_configs/*',
-    'third_party/analytics/*',
-    'ui/webui/resources/js/analytics.js',
 ]
 
 # pathlib.Path.match() paths to exclude from binary pruning
@@ -300,7 +298,7 @@ def main(args_list=None):
         args = parser.parse_args(args_list)
         try:
             bundle = ConfigBundle(args.bundle)
-        except BaseException:
+        except: #pylint: disable=bare-except
             get_logger().exception('Error loading config bundle')
             raise BuildkitAbort()
         if args.tree.exists() and not dir_empty(args.tree):
